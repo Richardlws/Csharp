@@ -6,7 +6,21 @@ namespace MyFirstProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("OK!");
+            Console.Write("Hey!");
+            Console.WriteLine("Hello!");
+
+            //This is a comment
+            /*
+             *this
+             *is
+             *a
+             *multiline
+             *comment
+             */
+
+            Console.WriteLine("Bro\nCode");
+
+            Console.ReadKey();
         }
 
     }
