@@ -10,11 +10,13 @@ namespace rockpapaerscissors
             bool playAgain = true;
             String player;
             String computer;
+            String answer;
 
             while (playAgain)
             {
                 player = "";
                 computer = "";
+                answer = "";
                 while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
                 {
                     Console.WriteLine("Enter ROCK, PAPER, OR SCISSORS: ");
@@ -45,15 +47,16 @@ namespace rockpapaerscissors
                 }
                 else if (player == computer)
                 {
-                    Console.WriteLine("Tie!");
+                    Console.WriteLine("It's a draw!");
                 }
                 else
                 {
                     Console.WriteLine("You Lose!");
                 }
-                Console.WriteLine("Would you play again (Y/N)?");
-                String playagain = Console.ReadLine();
-                if (playagain == "Y")
+                Console.WriteLine("Would you like to play again (Y/N)?");
+                answer = Console.ReadLine();
+                answer = answer.ToUpper();
+                if (answer == "Y")
                 {
                     playAgain = true;
                 }
@@ -62,6 +65,7 @@ namespace rockpapaerscissors
                     playAgain = false;
                 }
             }
+            Console.WriteLine("Thanks for playing!");
         }
     }
 }
