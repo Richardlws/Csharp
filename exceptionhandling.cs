@@ -11,18 +11,28 @@ namespace exceptionhandling
             //  chat = catches and handles exceptions when they occur
             //  finally = always executes regardless if exception is caught or not
 
-            double x;
-            double y;
-            double result;
+            int x;
+            int y;
+            int result;
+            try
+            {
+                Console.WriteLine("Enter number 1: ");
+                x = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter number 1: ");
-            x = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Enter number 2: ");
+                y = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter number 2: ");
-            y = Convert.ToDouble(Console.ReadLine());
-
-            result = x / y;
-            Console.WriteLine("result: " + result);
+                result = x / y;
+                Console.WriteLine("result: " + result);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Enter ONLY numbers PLEASE!");
+            }
+            catch(DivideByZeroException e)
+            {
+                Console.WriteLine("You can't divide by zero! IDIOT!");
+            }
 
         }
     }
