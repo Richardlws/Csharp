@@ -37,6 +37,10 @@ namespace exceptionhandling
             {
                 Console.WriteLine("Something went wrong!");
             }
+            finally
+            {
+                Console.WriteLine("Thanks for visiting!");
+            }
 
         }
     }
