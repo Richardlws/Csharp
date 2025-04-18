@@ -25,13 +25,17 @@ namespace exceptionhandling
                 result = x / y;
                 Console.WriteLine("result: " + result);
             }
-            catch (FormatException e)
+            /*catch (FormatException e)
             {
                 Console.WriteLine("Enter ONLY numbers PLEASE!");
             }
             catch(DivideByZeroException e)
             {
                 Console.WriteLine("You can't divide by zero! IDIOT!");
+            }*/
+            catch(Exception e)
+            {
+                Console.WriteLine("Something went wrong!");
             }
 
         }
