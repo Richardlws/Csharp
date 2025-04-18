@@ -9,16 +9,21 @@ namespace paramskeyword
         {
             //params keyword = a method parameter that takes a variiable number of arguments.
             //                  The parameter type must be a single - dimensional array
-            double total = CheckOut(3.99, 5.75, 15);
-            
+            double total = CheckOut(3.99, 5.75, 15, 1.00, 10.25);
+
             Console.WriteLine(total);
 
         }
-        static double CheckOut(double a)
+        static double CheckOut(params double[] prices)
         {
-            return a;
+            double total = 0;
+            foreach (double price in prices)
+            {
+                total += price;
+            }
+            return total;
         }
-        static double CheckOut(double a, double b)
+        /*static double CheckOut(double a, double b)
         {
             return a + b;
         }
@@ -26,5 +31,6 @@ namespace paramskeyword
         {
             return a + b + c;
         }
+        */
     }
 }
