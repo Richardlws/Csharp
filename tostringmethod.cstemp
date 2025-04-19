@@ -8,7 +8,7 @@ namespace ToStringMethod
             //ToString() = converts an object to its string representation so that it is suitable for display
 
             Car car = new Car("Chevy","Corvette",2022,"blue");
-            Console.WriteLine(car.ToString());
+            Console.WriteLine(car);
 
         }
 
@@ -30,9 +30,7 @@ namespace ToStringMethod
         }
         public override string ToString()
         {
-            return base.ToString();
+            return "This is a " + make + " " + model;
         }
     }
-    
-
 }
