@@ -1,4 +1,5 @@
 using System;
+using MyFirstProgram;
 
 namespace Myprogram
 {
@@ -14,29 +15,18 @@ namespace Myprogram
 
         }
     }*/
-    class Messages
-    {
-        public static void Hello()
-        {
-            Console.WriteLine("Hello! Welcome to the program");
-        }
-        public static void Waiting()
-        {
-            Console.WriteLine("I am waiting for something");
-        }
-        public static void Bye()
-        {
-            Console.WriteLine("Bye! Thanks for visiting");
-        }
     
+    class Program
+    {
         static void Main(string[] args)
             {
                 //class = A bundle of related code.
                 //          Can be used as a bluepring to create objeces(oop)
 
-                Messages.Hello();
+                MyFirstProgram.Messages.Hello();
                 Messages.Bye();
                 Messages.Waiting();
+                
 
             }
     }
