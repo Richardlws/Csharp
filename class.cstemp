@@ -1,0 +1,33 @@
+using System;
+using MyFirstProgram;
+
+namespace Myprogram
+{
+    /*class Program
+    {
+        static void Main(string[] args)
+        {
+            //class = A bundle of related code.
+            //          Can be used as a bluepring to create objeces(oop)
+
+
+            
+
+        }
+    }*/
+    
+    class Program
+    {
+        static void Main(string[] args)
+            {
+                //class = A bundle of related code.
+                //          Can be used as a bluepring to create objeces(oop)
+
+                MyFirstProgram.Messages.Hello();
+                Messages.Bye();
+                Messages.Waiting();
+                
+
+            }
+    }
+}

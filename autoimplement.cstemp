@@ -1,0 +1,30 @@
+using System;
+namespace AutoImplement
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Auto-Impplemented properties = shortcut when no additional logic is requeired in the property
+            //                              you do not have to define a field for a property,
+            //                              you only have to write get; and/or set; inside the property
+            Car car = new Car("Porsche");
+            Console.WriteLine(car.Model);
+
+
+        }
+    }
+    class Car
+    {
+        string model;
+        public string Model { get; set; }
+        //{
+        //    get{return model;}
+        //    set{model= value;}
+        //}
+        public Car(string model)
+        {
+            this.Model = model;
+        }
+    }
+}
